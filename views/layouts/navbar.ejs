@@ -1,7 +1,8 @@
 <nav>
-  <h2>RBAC</h2>
+  <h2>Akshay's RBAC Project</h2>
   <ul>
     <li><a href="/">Home</a></li>
+    
     <% if (user) { %>
     <li><a href="/user/profile">Profile</a></li>
     <% if (user.role === 'ADMIN') { %>

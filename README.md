@@ -1,9 +1,20 @@
-# Role Based Access Control (...still in dev mode...)
+# User Manual  
 
-This is a Role Based Access Control application using Nodejs, Express, Passport Js, etc.
-You can use this application as the starting point for whatever project you are going to build which needs authentication and authorization.
+## Roles and Permissions  
 
-For authentication we have only Email & Password option but other authentication options using OAuth/OAuth2.0 like Google, Facebook, Apple, GitHub, etc, can be easily incorporated.
+### 1. Client Role  
+- Log in to view and interact with assigned content.  
+- Limited access to administrative tools.  
+
+### 2. Admin Role  
+- Manage users by adding, editing, or removing them.  
+- Change user roles (Admin/Client) in the user management section.  
+
+### 3. How to Use  
+- Log in with your credentials.  
+- Navigate to the "Users" section (Admin only) to manage or update user roles.  
+- Clients can access their dashboard for content and features.  
+
 
 The application is based on the **MVC pattern** i.e. Model View Controller.
 
@@ -11,9 +22,9 @@ The application is based on the **MVC pattern** i.e. Model View Controller.
 
 **Passport JS** is used for local(email, password) authentication.
 
-The application is _almost_ **production ready**.
-
 ---
+
+
 
 ## To start setting up the project
 
@@ -36,31 +47,9 @@ PORT=3000
 MONGODB_URI=YOUR_MONGODB_URI(example: mongodb://localhost:27017)
 DB_NAME=YOUR_DB_NAME
 ```
-
-Step 4: Install MongoDB (Linux Ubuntu)
-
-See <https://docs.mongodb.com/manual/installation/> for more infos
-
-Step 5: Run Mongo daemon
+Step 4: Start the app by
 
 ```bash
-sudo service mongod start
+npm run dev
 ```
 
-Step 6: Start the app by
-
-```bash
-npm start
-```
-
-## Author
-
-- [**Truly Mittal**](https://trulymittal.com)
-
-## Contribute
-
-You can fork this repo and send me a PR.
-
-## License
-
-This project is licensed under the MIT License.

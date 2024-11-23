@@ -90,9 +90,9 @@ mongoose
     useFindAndModify: false,
   })
   .then(() => {
-    console.log('💾 connected...');
+    console.log('connected...');
     // Listening for connections on the defined PORT
-    app.listen(PORT, () => console.log(`🚀 @ http://localhost:${PORT}`));
+    app.listen(PORT, () => console.log(`@ http://localhost:${PORT}`));
   })
   .catch((err) => console.log(err.message));
 
