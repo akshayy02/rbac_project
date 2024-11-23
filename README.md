@@ -31,7 +31,7 @@ The application is based on the **MVC pattern** i.e. Model View Controller.
 Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/trulymittal/role-based-access-control
+git clone https://github.com/akshayy02/rbac_project
 ```
 
 Step 2: cd into the cloned repo and run:
